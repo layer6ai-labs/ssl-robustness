@@ -37,7 +37,7 @@ You can run this code for different actions. Here are different actions and what
 
 `adversarial_attack`: attacks both the encoder and the downstream model and reports the adversarial accuracy. For segmentation for now we attack only the encoder and report adversarial mean accuracy and mean IoU.
 
-For `task` you can selection one of three tasks: `classification`, `segmentation`, `depth_estimation`. For `ssl_model`, you can select any of the files inside `conf/ssl_model/`, just remove `.yaml` suffix. Finally, for the `task.dataset`, you can select any dataset list [here](https://github.com/atiyeh-ashari/robust-ssl-l6/blob/atiyeh/publish/data/local_datasets.py#L456-L468).
+For `task` you can selection one of three tasks: `classification`, `segmentation`, `depth_estimation`. For `ssl_model`, you can select any of the files inside `conf/ssl_model/`, just remove `.yaml` suffix. Finally, for the `task.dataset`, you can select any dataset list [here](https://github.com/layer6ai-labs/ssl-robustness/blob/main/data/local_datasets.py#L456-L468).
 
 ## Checkpoints
 Please download the checkpoints folder from this [drive](https://drive.google.com/drive/folders/11vS0t1BDQAFoqGWjBsyFuffbR_2gQihS?usp=sharing) and put it under [tmp/](tmp/) to get started. 
