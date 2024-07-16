@@ -1,0 +1,6 @@
+action: "downstream_training"
+device: "cuda"
+data_root: "tmp/data"
+output_path: "tmp/logs"
+num_workers: 8
+seed: 0

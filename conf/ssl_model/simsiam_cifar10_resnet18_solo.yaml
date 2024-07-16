@@ -1,0 +1,18 @@
+name: "simsiam_cifar10_resnet18_solo" 
+ssl_model: "simsiam"
+encoder_arch: "resnet18"
+proj_hidden_dim: 2048
+proj_output_dim: 2048
+pred_hidden_dim: 512
+proj_batch_norm: False
+temperature: 0.2
+feature_dim: 512
+image_size: 32
+cifarResNet: True
+conv1_padding: 2
+ckpt:
+  ckpts_folder: "tmp/checkpoints/cifar10/simsiam_resnet18_solo" # folder of different ckpts of the model(e.g. training history)
+  final_ckpt: "tmp/checkpoints/cifar10/simsiam_resnet18_solo/simsiam-cifar10-resnet18-solo.ckpt"
+  encoder_name: "backbone"
+  projector_name: "projector"
+  predictor_name: "predictor"

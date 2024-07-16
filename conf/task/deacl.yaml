@@ -1,0 +1,28 @@
+task: "deacl"
+dataset: "cifar10"
+
+devices: "[0,1,2,3]"
+accelerator: "gpu"
+precision: 16
+
+optimizer: "sgd"
+scheduler: "warmup_cosine"
+max_epochs: 101
+lr: 0.5
+num_workers: 4
+batch_size: 128
+weight_decay: 0.0005
+
+train_epsilon: 8/255
+train_num_steps: 5
+train_attack_lr: 2/255
+
+trades_k: 2
+
+save_checkpoint: True
+checkpoint_frequency: 25
+resume_checkpoint: ""
+
+wandb: True
+wandb_project: "deacl_finetune_robust_ssl"
+wandb_name: "simclr_resnet18"

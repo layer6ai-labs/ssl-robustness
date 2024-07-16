@@ -1,0 +1,6 @@
+action: "adversarial_finetuning"
+device: "cuda"
+data_root: "tmp/data"
+output_models_root: "tmp/checkpoints"
+output_path: "tmp/logs"
+seed: 0

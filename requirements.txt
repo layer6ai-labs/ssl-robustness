@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib
+transformers
+scikit-learn
+black
+h5py

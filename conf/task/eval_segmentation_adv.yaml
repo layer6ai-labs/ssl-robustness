@@ -1,0 +1,12 @@
+task: "eval_segmentation_adv"
+dataset: "ade20k"
+batch_size: 16
+eval_only: False
+n_samples_to_eval_train: 1000
+eval_every_n_epochs: 1
+lr: 0.001
+epochs: 1
+warmup_iterations: 1500
+warmup_ratio: 0.000001
+eval_downstream: True
+eval_embed: False

@@ -1,0 +1,11 @@
+action: "adversarial_attack"
+device: "cuda"
+data_root: "tmp/data"
+output_path: "tmp/logs"
+seed: 0
+attack_loss: "L2"
+attack_lr: 2/255
+attack_epsilon: 8/255
+attack_num_steps: 20
+eval_downstream: True
+eval_embed: True

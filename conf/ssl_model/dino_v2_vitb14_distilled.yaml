@@ -1,0 +1,21 @@
+name: "dino_v2_vitb14_distilled" 
+ssl_model: "dinov2"
+encoder_arch: "vitb"
+proj_output_dim: 65536
+use_bn_in_head: False
+feature_dim: 768 # 192 for tiny, 384 for small, 768 for base
+num_heads: 12 # 3 for tiny, 6 for small, 12 for base
+head_channels: 1536 # small 768, base 1536
+patch_size: 14 # patch size for transformer
+image_size: 518
+stride_size: 341
+pretrained_url:
+  repo: "facebookresearch/dinov2"
+  name: "dinov2_vitb14"
+out_indices: 11
+ckpt:
+  ckpts_folder:  # folder of different ckpts of the model(e.g. training history)
+  final_ckpt: tmp/checkpoints/dinov2/dinov2_vitb14_pretrain.pth # checkpoint for the full model
+  encoder_name: "" # no prefix for encoder weights
+  projector_name: "head" #no head weights available 
+  non_standard_naming: False

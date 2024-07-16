@@ -1,0 +1,5 @@
+task: "classification"
+lr: 0.5
+dataset: "cifar10"
+batch_size: 128
+epochs: 5

@@ -1,0 +1,19 @@
+name: "simclr_cifar10_resnet18_DeACL" 
+ssl_model: "simclr"
+encoder_arch: "resnet18"
+proj_hidden_dim: 2048
+proj_output_dim: 256
+proj_batch_norm: False
+temperature: 0.2
+feature_dim: 512
+image_size: 32
+cifarResNet: True
+normalize: True
+conv1_padding: 2
+ckpt:
+  ckpts_folder: null # folder of different ckpts of the model(e.g. training history)
+  final_ckpt: "tmp/checkpoints/cifar10/simclr_resnet18_DeACL/res18_simclr-cifar10-0-ep=99.ckpt"
+  state_dict_key: 'state_dict'
+  encoder_name: "backbone"
+  projector_name: "projector"
+  drop_norm: True

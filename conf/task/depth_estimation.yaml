@@ -1,0 +1,11 @@
+task: "depth_estimation"
+lr: 0.0001
+dataset: "nyu_depth_v2"
+batch_size: 128
+epochs: 20
+load_official: False
+head: "dinov2_vitb14_nyu_linear_head.pth" # other option "dinov2_vits14_nyu_linear_head.pth"
+sig_loss_weight: 1
+grad_loss_weight: 0.5
+
+mode: "frozen" #"finetune"

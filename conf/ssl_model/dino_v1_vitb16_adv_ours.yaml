@@ -1,0 +1,19 @@
+name: "dino_v1_vitb16_adv_ours" 
+ssl_model: "dinov1"
+encoder_arch: "vitb"
+proj_output_dim: 65536
+use_bn_in_head: False
+feature_dim: 768 # 192 for tiny, 384 for small, 768 for base
+num_heads: 12 # 3 for tiny, 6 for small, 12 for base
+head_channels: 1536 # small 768, base 1536
+patch_size: 16 # patch size for transformer
+image_size: 224
+stride_size: 100 # arbitrary, waiting for the official configs
+pretrained_url: None
+ckpt:
+  ckpts_folder: null # folder of different ckpts of the model(e.g. training history)
+  final_ckpt: "tmp/checkpoints/imagenet/dino/ours/_dinov1_vitb16_imagenet_lr0-05_eps4_nodecay-uv8qk1e4-ep=100.ckpt"
+  encoder_name: "backbone.encoder"
+  projector_name: "head"
+  non_standard_naming: False
+  state_dict_key: "teacher"

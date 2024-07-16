@@ -1,0 +1,17 @@
+name: "simclr_cifar10_resnet50" 
+ssl_model: "simclr"
+encoder_arch: "resnet50"
+proj_hidden_dim: 512
+proj_output_dim: 128
+proj_batch_norm: True
+temperature: 0.2
+feature_dim: 2048
+image_size: 32
+cifarResNet: True
+conv1_padding: 1
+ckpt:
+  ckpts_folder: "tmp/checkpoints/cifar10/simclr_resnet50_ours" # folder of different ckpts of the model(e.g. training history)
+  final_ckpt: "tmp/checkpoints/cifar10/simclr_resnet50_ours/128_0.5_200_128_800_model_199.pth" # path to the final model
+  encoder_name: "f"
+  projector_name: "g"
+  non_standard_naming: True
