@@ -1,6 +1,6 @@
 # SSL-Robustness
 
-This is the codebase for benchmarking adversarial robustness of Self-Supervised Learning across different downstream tasks presented in [Benchmarking Robust Self-Supervised Learning Across Diverse Downstream Tasks](https://arxiv.org/abs/2407.12588) and accepted at [ICML 2024 Workshop FM-Wild](https://openreview.net/forum?id=U2nyqFbnRF).
+This is the codebase for [Benchmarking Robust Self-Supervised Learning Across Diverse Downstream Tasks](https://arxiv.org/abs/2407.12588), accepted at [ICML 2024 Workshop FM-Wild](https://openreview.net/forum?id=U2nyqFbnRF).
 
 ## Installation & Usage
 
